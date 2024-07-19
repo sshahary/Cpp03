@@ -6,16 +6,16 @@
 #    By: sshahary <sshahary@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/16 03:22:33 by sshahary          #+#    #+#              #
-#    Updated: 2024/07/16 03:22:40 by sshahary         ###   ########.fr        #
+#    Updated: 2024/07/19 20:15:07 by sshahary         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = fixed_point
+NAME = claptrap
 
-SRCS = main.cpp Fixed.cpp
+SRCS = main.cpp ClapTrap.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
