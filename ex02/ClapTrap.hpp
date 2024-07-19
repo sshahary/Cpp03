@@ -1,0 +1,46 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sshahary <sshahary@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/19 21:16:54 by sshahary          #+#    #+#             */
+/*   Updated: 2024/07/19 21:17:18 by sshahary         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef CLAPTRAP_HPP
+#define CLAPTRAP_HPP
+
+#include <iostream>
+#include <string>
+
+class ClapTrap
+{
+	protected:
+	std::string _name;
+	int _hitPoints;
+	int _energyPoints;
+	int _attackDamage;
+	public:
+	// Constructor with name parameter
+	ClapTrap(const std::string& name);
+
+	// Copy constructor
+	ClapTrap(const ClapTrap& other);
+
+	// Copy assignment operator
+	ClapTrap& operator= (const ClapTrap& other);
+
+	// Destructor
+	virtual ~ClapTrap();
+
+	// Member functions
+	virtual void attack(const std::string& target);
+	void takeDamage(unsigned int amount);
+	void beRepaired(unsigned int amount);
+
+};
+
+#endif
