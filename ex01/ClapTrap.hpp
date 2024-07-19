@@ -6,7 +6,7 @@
 /*   By: sshahary <sshahary@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 20:40:21 by sshahary          #+#    #+#             */
-/*   Updated: 2024/07/19 20:57:58 by sshahary         ###   ########.fr       */
+/*   Updated: 2024/07/19 21:14:39 by sshahary         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ class ClapTrap
 	ClapTrap& operator= (const ClapTrap& other);
 
 	// Destructor
-	~ClapTrap();
+	virtual ~ClapTrap();
 
 	// Member functions
-	void attack(const std::string& target);
+	virtual void attack(const std::string& target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 
